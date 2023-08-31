@@ -10,7 +10,7 @@ public class KafkaTopicConfig {
 
     @Bean
     public NewTopic sampleTopic() {
-        return TopicBuilder.name("sample-topic").build();
+        return TopicBuilder.name("sample-topic2").build();
 
     }
 

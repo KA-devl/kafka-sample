@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 public class KafkaConsumer {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
-    @KafkaListener(topics = "sample-topic", groupId="myGroup")
+    @KafkaListener(topics = "sample-topic2", groupId="myGroup")
     public void consume(String message){
         LOGGER.info("Message received! : " + message);
     }
