@@ -12,6 +12,6 @@ public class JsonKafkaConsumer {
     private static final Logger LOGGER = LoggerFactory.getLogger(JsonKafkaConsumer.class);
     @KafkaListener(topics = "sample-topic-json", groupId = "myGroup")
     public void consume (User user ){
-        LOGGER.info("Consumed new user" +user);
+        LOGGER.info("Consumed new user" +user.toString());
     }
 }
